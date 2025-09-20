@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{
+            width: 300px;
+            border: 2px solid black;
+            border-radius: 30px;
+            margin: 10px;
+            flex-grow: 1;
+            opacity: 0.6;
+        }
+
+        img:hover{
+            border: 3px solid green;
+            opacity: 1;
+            width: 400px;
+        }
+
+        .flexcontainer{
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        h1{
+            border: 1px solid red;
+            background-color: brown;
+            text-align: center;
+            color: white;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Gallery</h1>
+    <div class="flexcontainer">
+        <img src="Images/img1.jpg" alt="1">
+        <img src="Images/img2.jpg" alt="2">
+        <img src="Images/img3.jpg" alt="3">
+        <img src="Images/img4.jpg" alt="4">
+        <img src="Images/img5.jpg" alt="5">
+        <img src="Images/img6.jpg" alt="6">
+        <img src="Images/img7.jpg"  style="flex-grow: unset;" alt="7">
+    </div>
+</body>
+</html>
